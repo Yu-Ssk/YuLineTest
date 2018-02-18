@@ -1,0 +1,19 @@
+{
+  "name": "YuLineTest",
+  "main": "app.js",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.*"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cfenv": "1.0.x",
+    "express": "4.13.x",
+    "date-utils": "^1.2.16",
+    "request": "^2.75.0"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}

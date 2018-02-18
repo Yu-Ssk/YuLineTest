@@ -1,0 +1,7 @@
+applications:
+- path: .
+  name: YuLineTest
+  domain: mybluemix.net
+  random-route: true
+  instances: 1
+  memory: 64M
