@@ -37,6 +37,7 @@ app.post('/api', function(req, res) {
   var stre;
   var strj;
 
+  now.setHours(now.getHours() + 9);
   for (i in json.items) {
       item = json.items[i];
       if (item.date === now.toFormat('YYYY/MM/DD')) {
@@ -48,7 +49,7 @@ app.post('/api', function(req, res) {
   //おかわりの場合
   var strreq = req.body.events[0].message.text;
   var strtarget = "おかわり";
-  console.log("strreq");
+  console.log("[%s]%s", now.toFormat("YYYY/MM/DD HH24時MI分SS秒"), strreq);
   if (strreq.indexOf(strtarget) >= 0) {
     var min = 0 ;
     var max = 559 ;
